@@ -16,7 +16,7 @@ class QuizeApp extends JFrame implements ActionListener {
 	int count = 0, question = 0, x = 1, y = 1, now = 0;
 	int m[] = new int[10];
 
-	// create jFrame with radioButton and JButton
+
 	QuizeApp(String s) {
 		super(s);
 		label = new JLabel();
@@ -52,7 +52,6 @@ class QuizeApp extends JFrame implements ActionListener {
 		setSize(800, 550);
 	}
 
-	// handle all actions based on event
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == btnNext) {
 			if (check())
@@ -100,7 +99,6 @@ class QuizeApp extends JFrame implements ActionListener {
 
 	}
 
-	// SET Questions with options
 	void set() {
 		radioButton[4].setSelected(true);
 		if (question == 0) {
@@ -177,7 +175,6 @@ class QuizeApp extends JFrame implements ActionListener {
 	
 	}
 
-	// declare right answers.
 	boolean check() {
 		if (question == 0)
 			return (radioButton[1].isSelected());
